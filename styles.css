@@ -149,15 +149,15 @@ input {
     padding: 30px 30px;
     border-radius: 60px;
     width: 100%;
-    color: rgb(226, 232, 240);
     cursor: text;
+    caret-color: black;
+    font-size: 22px;
 }
 
 input::placeholder {
     color: rgb(200, 216, 237);
     font-size: 20px;
     font-weight: 500;
-    margin-right: 5px;
 }
 
 .get-started__link {
