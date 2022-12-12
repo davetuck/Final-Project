@@ -217,7 +217,7 @@ input::placeholder {
 /* FEATURES */
 
 #features {
-    padding-top: 120px;
+    padding: 120px 0;
 }
 
 .features__wrapper {
@@ -236,12 +236,6 @@ input::placeholder {
 
 .features__heading {
     font-size: 60px;
-
-}
-
-.purple__service {
-    color: #6415FF;
-    font-weight: 800;
 }
 
 .features__info {
@@ -291,4 +285,159 @@ input::placeholder {
     font-weight: 500;
     line-height: 2;
     width: 80%;
+}
+
+/* QUALITY */
+
+#quality {
+    display: flex;
+    align-items: center;
+    padding: 120px 0;
+}
+
+.quality__title {
+    color: #6415FF;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 0 0 20px 0;
+}
+
+.quality__info--wrapper {
+    width: 50%;
+}
+
+.quality__heading {
+    font-size: 60px;
+    font-weight: 900;
+    margin: 20px 0;
+    width: 90%;
+}
+
+.purple__weight {
+    font-weight: 900;
+}
+
+.quality__info--content {
+    margin-top: 20px;
+    color: #7C8BA1;
+    font-weight: 500;
+    line-height: 1.625;
+    width: 90%;
+}
+
+.learn__more--button {
+    margin-top: 40px;
+    background-color: #6415FF;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 40px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.learn__more--button:hover {
+    background-color: #440bb5;
+}
+
+.quality__image--wrapper {
+   width: 50%;
+   display: flex;
+   align-items: center;
+}
+
+.hero__screen-shot {
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid rgb(226, 232, 240)
+}
+
+.dot__decorator {
+    fill: rgb(100, 21, 255);
+    height: 100px;
+    width: 100px;
+    z-index: -1;
+    margin-left: -50px;
+    margin-right: -60px;
+    margin-top: 60%;
+}
+
+/* STEPS */
+
+#steps {
+    padding: 120px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.steps__image--wrapper {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero__screen-shot--two {
+    width: 100%;
+}
+
+.dot__decorator--two {
+    fill: #CBD5E0;
+    height: 100px;
+    width: 100px;
+    z-index: -1;
+    margin-top: -48px;
+}
+
+.steps__wrapper {
+    width: 43%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.steps__title--wrapper {
+    text-align: left;
+}
+
+.steps__title {
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.steps__header {
+    font-size: 60px;
+    font-weight: 900;
+    margin-top: 20px;
+}
+
+.steps__info--wrapper {
+    display: flex;
+    margin-top: 40px;
+}
+
+.step__number {
+    font-size: 45px;
+    color: #CBD5E0;
+    font-weight: 550;
+}
+
+.steps__info {
+    margin-left: 30px;
+}
+
+.steps__info--heading {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.steps__info--instructions {
+    margin-top: 15px;
+    line-height: 2;
+    color: #718096;
+    font-size: 17.5px;
 }
