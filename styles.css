@@ -18,6 +18,10 @@ p {
     line-height: 1.5;
 }
 
+section {
+    padding: 120px 0;
+}
+
 /* NAVIGATION */
 
 .nav-wrapper {
@@ -118,7 +122,6 @@ i:hover {
 /* ABOUT */
 
 #about {
-    padding: 120px 0;
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
@@ -216,10 +219,6 @@ input::placeholder {
 
 /* FEATURES */
 
-#features {
-    padding: 120px 0;
-}
-
 .features__wrapper {
     display: flex;
     justify-content: center;
@@ -292,7 +291,6 @@ input::placeholder {
 #quality {
     display: flex;
     align-items: center;
-    padding: 120px 0;
 }
 
 .quality__title {
@@ -367,7 +365,6 @@ input::placeholder {
 /* STEPS */
 
 #steps {
-    padding: 120px 0;
     display: flex;
     justify-content: space-between;
 }
@@ -446,7 +443,6 @@ input::placeholder {
 
 #values {
     display: flex;
-    margin: 120px 0;
 }
 
 .values__info--wrapper {
@@ -511,4 +507,172 @@ input::placeholder {
 .prototype__illustration {
     width: 100%;
     margin-left: 20px;
+}
+
+/* PRICING */
+
+.pricing {
+    text-align: center;
+}
+
+.pricing__info--wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.pricing__info {
+    font-size: 22.5px;
+    line-height: 36.5625px;
+    font-weight: 500;
+    color: rgb(124, 139, 161);
+    width: 65%;
+}
+
+.three__plans--wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.plan__decorator {
+    height: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.plan__decorator--personal {
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+.plan__decorator--business {
+    display: none;
+}
+
+.plan__decorator--enterprise {
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);;
+}
+
+.plan {
+    width: 28%;
+    margin: 80px 0 0 0;
+}
+
+.plan__2 {
+    background-color: rgb(100, 21, 255);
+    background-image: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+    border-radius: 10px;
+}
+
+.plan__heading {
+    text-align: center;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    padding: 40px 0;
+    max-width: 480px;
+}
+
+.plan__heading--2 {
+    color: white;
+    margin-top: 8px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.147);
+}
+
+.plan__title {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.plan__price {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.plan__freq {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(160,174,192);
+    letter-spacing: 2px;
+}
+
+.plan__freq--2 {
+    color: white;
+}
+
+.plan__content {
+    text-align: center;
+    padding: 40px;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    height: 375px;
+}
+
+.plan__content--2 {
+    color: white;
+    border-left: none;
+    border-right: none;
+}
+
+.plan__info--title {
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: .625px;
+    line-height: 37.5px;
+}
+
+.plan__info {
+    margin-top: 25px;
+    font-weight: 500;
+    color: rgb(113, 128, 150)
+}
+
+.plan__info--2 {
+    color: white;
+}
+
+.plan__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid lightgray;
+    padding: 40px 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.plan__button--2 {
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.147);
+
+}
+
+.buy-now__button {
+    border: none;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 40px;
+    font-size: 17.5px;
+    font-weight: 700;
+    letter-spacing: .875px;
+    cursor: pointer;
+}
+
+.buy-now__button--personal {
+    background-image: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217));
+}
+
+.buy-now__button--business {
+    background-color: white;
+    color: #6415FF;
+}
+
+.buy-now__button--enterprise {
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);;
 }
