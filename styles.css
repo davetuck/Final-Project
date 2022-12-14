@@ -119,6 +119,28 @@ i:hover {
     background-color: #440bb5;
 }
 
+.hamburger__menu {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color:rgb(76, 81, 191);
+    display: block;
+}
+
+.hamburger__menu--links {
+    display: block;
+    transform: translateX(0%);
+    transform: translateZ(0px);
+}
+
+.hamburger__menu::before {
+    display: none;
+}
+
+.hamburger__menu::after {
+    display: none;
+}
+
 /* ABOUT */
 
 #about {
@@ -834,6 +856,7 @@ input::placeholder {
     border-radius: 20px;
     color: black;
     margin-left: 16px;
+    transition: all .4s ease;
 }
 
 .fa-twitter {
@@ -842,4 +865,93 @@ input::placeholder {
 
 .fa-youtube {
     padding: 10px 8px;
+}
+
+/* RESPONSIVENESS */
+
+@media (max-width: 1200px) {
+    .hamburger__menu, .hamburger__menu--links, .hamburger__menu--links-wrapper, .hamburger__menu--link {
+        display: none;
+    }
+}
+
+@media (max-width:1112px) {
+    section {
+        padding: 60px 0;
+    }
+    ul {
+        display: none;
+    }
+    .hamburger__menu {
+        display: inline-block;
+    }
+    #about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-wrapper {
+        width: 100%;
+        max-width: 32rem;
+    }
+    .about__heading {
+        font-size: 37.5px;
+    }
+    .about__info {
+        width: 100%;
+    }
+    .input--wrapper {
+        margin: 0 50px;
+    }
+    .trusted__customers {
+        margin-top: 50px;
+    }
+    .trusted__title {
+        text-align: center;
+    }
+    .trusted__image {
+        margin-bottom: 20px;
+    }
+    .features__info {
+        line-height: 1.5;
+        font-size: 20px;
+    }
+    .cards {
+        margin-bottom: 0px;
+    }
+    .card {
+        width: 50%;
+    }
+    .quality__heading {
+        font-size: 45px;
+    }
+    .section__header {
+        font-size: 45px;
+    }
+    .content__wrapper {
+        flex-direction: column;
+    }
+    .three__plans--wrapper {
+        flex-direction: column;
+    }
+    .plan {
+        width: 50%;
+    }
+    .contact__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact__header {
+        width: 75%;
+        text-align: center;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+    .get__started {
+        margin-right: 20px;
+    }
+    .contact_us {
+        margin-left: 10px;
+    }
 }
