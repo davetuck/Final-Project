@@ -119,26 +119,69 @@ i:hover {
     background-color: #440bb5;
 }
 
-.hamburger__menu {
-    background: none;
+.menu__backdrop {
+    position: absolute;
+    background-color: #242424;;
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 300ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.menu--open .menu__backdrop {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu--open {
+    max-height: 100vh;
+    overflow-y: hidden;
+}
+
+.btn__menu {
+    background-color: transparent;
     border: none;
+    font-size: 40px;
     cursor: pointer;
     color:rgb(76, 81, 191);
-    display: block;
-}
-
-.hamburger__menu--links {
-    display: block;
-    transform: translateX(0%);
-    transform: translateZ(0px);
-}
-
-.hamburger__menu::before {
     display: none;
 }
 
-.hamburger__menu::after {
-    display: none;
+.btn__menu--close {
+    position: absolute;
+    right: 42px;
+    top: 32px;;
+    padding: 8px;
+    color: white;
+}
+
+.menu__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu__link {
+    color: white;
+    font-size: 30px;
+    margin-top: 35px;
+    transition: all 300ms ease;
+}
+
+.menu__link:active {
+    color: #6415FF
+}
+
+.sign-up__button--menu {
+    margin-top: 35px;
+    font-size: 30px;
 }
 
 /* ABOUT */
@@ -870,21 +913,15 @@ input::placeholder {
 
 /* RESPONSIVENESS */
 
-@media (max-width: 1200px) {
-    .hamburger__menu, .hamburger__menu--links, .hamburger__menu--links-wrapper, .hamburger__menu--link {
-        display: none;
-    }
-}
-
-@media (max-width:1112px) {
+@media (max-width: 1112px) {
     section {
         padding: 60px 0;
     }
-    ul {
+    .nav__link--list {
         display: none;
     }
-    .hamburger__menu {
-        display: inline-block;
+    .btn__menu {
+        display: list-item;
     }
     #about {
         display: flex;
@@ -1080,5 +1117,18 @@ input::placeholder {
     .contact__header {
         margin: 20px 0;
         font-size: 30px;
+    }
+}
+
+@media (max-width: 430px) {
+    .menu__link {
+        color: white;
+        font-size: 25px;
+        margin-top: 35px;
+        transition: all 300ms ease;
+    }
+    .sign-up__button--menu {
+        margin-top: 35px;
+        font-size: 25px;
     }
 }
