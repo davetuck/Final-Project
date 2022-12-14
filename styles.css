@@ -120,8 +120,8 @@ i:hover {
 }
 
 .menu__backdrop {
-    position: absolute;
-    background-color: #242424;;
+    position: fixed;
+    background-color: #fff;;
     top: 0; 
     left: 0;
     right: 0;
@@ -133,11 +133,14 @@ i:hover {
     transition: all 300ms ease;
     opacity: 0;
     visibility: hidden;
+    transform: translateX(100%);
 }
 
 .menu--open .menu__backdrop {
     visibility: visible;
     opacity: 1;
+    transform: translateX(0);
+
 }
 
 .menu--open {
@@ -159,7 +162,7 @@ i:hover {
     right: 42px;
     top: 32px;;
     padding: 8px;
-    color: white;
+    color: rgb(76, 81, 191);
 }
 
 .menu__list {
@@ -169,7 +172,7 @@ i:hover {
 }
 
 .menu__link {
-    color: white;
+    color: black;
     font-size: 30px;
     margin-top: 35px;
     transition: all 300ms ease;
@@ -1122,13 +1125,9 @@ input::placeholder {
 
 @media (max-width: 430px) {
     .menu__link {
-        color: white;
         font-size: 25px;
-        margin-top: 35px;
-        transition: all 300ms ease;
     }
     .sign-up__button--menu {
-        margin-top: 35px;
         font-size: 25px;
     }
 }
